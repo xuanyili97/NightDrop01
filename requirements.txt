@@ -1,0 +1,9 @@
+python == 3.8.20
+torch == 1.11.0+cu113
+timm 
+scikit-image
+tqdm
+numpy
+opencv-python
+h5py
+einops
