@@ -1,19 +1,11 @@
 data:
-<<<<<<< HEAD
-    dataset: "NightDrop"
-=======
-    dataset: "NightRaindrop"
->>>>>>> 862abb9d2195f119585097ea365c96760c7a92c5
-    #image_size: 64 # DIT, RDiffusion, onego
-    image_size: 256 # ICRA, Uformer, atgan
+    dataset: "RainDrop"
+    image_size: 64 # Raindrop_DiT, RDiffusion, onego
+    #image_size: 256 # ICRA, Uformer, atgan
     # image_size: 128 # IDT, restormer
     channels: 3
     num_workers: 8
-<<<<<<< HEAD
-    data_dir: "/mnt/sda/lxy/NightDrop/"
-=======
-    data_dir: "/home1/yeying/release/NightRainDrop/"
->>>>>>> 862abb9d2195f119585097ea365c96760c7a92c5
+    data_dir: "/home1/yeying/release/DayRainDrop/"
     conditional: True
 
 model:
@@ -35,20 +27,21 @@ diffusion:
     num_diffusion_timesteps: 1000
 
 training:
-    #-----------DIT, RDiffusion, onego, ICRA--------------
-    # patch_n: 4
-    # batch_size: 16
+    #-----------Raindrop_DiT, RDiffusion, onego, ICRA--------------
+    patch_n: 4
+    batch_size: 16
     # #---------IDT Uformer restormer--------------
-    patch_n: 1
-    batch_size: 4
+    # patch_n: 1
+    # batch_size: 4
     #-----------atgan--------------
     # patch_n: 1
     # batch_size: 32
-    #-----------DIT, RDiffusion--------------
-    #n_epochs: 37042
-    n_epochs: 401
+    #-----------Raindrop_DiT, RDiffusion--------------
+    n_epochs: 37042
+    #n_epochs: 401
     n_iters: 20000000
-    snapshot_freq: 50
+    #snapshot_freq: 50
+    snapshot_freq: 10000
     validation_freq: 10000
 
 sampling:
