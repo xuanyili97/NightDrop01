@@ -1,19 +1,11 @@
 data:
-<<<<<<< HEAD
-    dataset: "NightDrop"
-=======
     dataset: "NightRaindrop"
->>>>>>> 862abb9d2195f119585097ea365c96760c7a92c5
     #image_size: 64 # DIT, RDiffusion, onego
     image_size: 256 # ICRA, Uformer, atgan
     # image_size: 128 # IDT, restormer
     channels: 3
     num_workers: 8
-<<<<<<< HEAD
-    data_dir: "/mnt/sda/lxy/NightDrop/"
-=======
-    data_dir: "/home1/yeying/release/NightRainDrop/"
->>>>>>> 862abb9d2195f119585097ea365c96760c7a92c5
+    data_dir: " "
     conditional: True
 
 model:

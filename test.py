@@ -16,7 +16,7 @@ def parse_args_and_config():
     parser = argparse.ArgumentParser(description='Restoring NightDrop with atgan')
     parser.add_argument("--config", type=str, default='nighttime_256.yml',
                         help="Path to the config file")
-    parser.add_argument('--resume', default='/mnt/sda/lxy/NightDrop/Param/NightDrop/atgan/epoch100.pth.tar', type=str,
+    parser.add_argument('--resume', default='/mnt/sda/xxx/NightDrop/Param/NightDrop/atgan/epoch100.pth.tar', type=str,
                         help='Path for the model checkpoint to load for evaluation')
     parser.add_argument("--grid_r", type=int, default=16,
                         help="Grid cell width r that defines the overlap between patches")

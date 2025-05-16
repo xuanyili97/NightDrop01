@@ -6,7 +6,7 @@ import lpips
 # loss_fn_alex = lpips.LPIPS(net='alex')
 loss_fn_vgg = lpips.LPIPS(net='vgg')
 
-base_path = '/mnt/sda/lxy/NightDrop/' 
+base_path = '/mnt/sda/xxx/NightDrop/' 
 
 nightend_path = 'NightRainDrop/gt/'
 model_name   = 'restormer/'

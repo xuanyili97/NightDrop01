@@ -7,5 +7,5 @@ sids=(
 
 for sid in "${sids[@]}"
 do
-    CUDA_VISIBLE_DEVICES=3 python test.py --sid "$sid"
+    CUDA_VISIBLE_DEVICES=1 python test.py --sid "$sid"
 done
